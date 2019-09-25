@@ -2,6 +2,8 @@ package sindre;
 
 import org.junit.Test;
 
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 /**
@@ -37,5 +39,7 @@ public class AppTest
         System.out.println(test2+"\n"+test3);
         assertNotNull(test2);
         assertNotNull(test3);
+        List<String> test4 = asd.getXAmountOfFlickNamn(5);
+        assertEquals(5, test4.size());
     }
 }

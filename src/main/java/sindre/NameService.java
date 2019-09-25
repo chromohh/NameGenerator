@@ -46,6 +46,28 @@ public class NameService {
         return efterNamn.get(randomizer.randomNumber(efterNamn.size()));
     }
 
+    public List<String> getXAmountOfPojkNamn(int amount){
+        List<String> temp = new ArrayList<>();
+        for(int i = 0; i < amount; i++){
+            temp.add(getRandomPojknamn());
+        }
+        return temp;
+    }
+    public List<String> getXAmountOfFlickNamn(int amount){
+        List<String> temp = new ArrayList<>();
+        for(int i = 0; i < amount; i++){
+            temp.add(getRandomFlicknamn());
+        }
+        return temp;
+    }
+    public List<String> getXAmountOfEfterNamn(int amount){
+        List<String> temp = new ArrayList<>();
+        for(int i = 0; i < amount; i++){
+            temp.add(getRandomFlicknamn());
+        }
+        return temp;
+    }
+
     public List<String> getFlickNamn() {
         return flickNamn;
     }
