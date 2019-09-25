@@ -8,6 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -15,6 +16,9 @@ public class NameService {
     private List<String> flickNamn;
     private List<String> pojkNamn;
     private List<String> efterNamn;
+    private int maxLengthFlicknamn = 19391;
+    private int maxLengthPojknamn = 19499;
+    private int maxLengthEfternamn = 75;
 
     public NameService()  {
         this.flickNamn = createNameList("flicknamn.txt");
@@ -32,7 +36,10 @@ public class NameService {
         return result;
     }
 
+
     public List<String> getFlickNamn() {
         return flickNamn;
     }
+
+
 }
