@@ -16,9 +16,7 @@ public class NameService {
     private List<String> flickNamn;
     private List<String> pojkNamn;
     private List<String> efterNamn;
-    private int maxLengthFlicknamn = 19391;
-    private int maxLengthPojknamn = 19499;
-    private int maxLengthEfternamn = 75;
+    private Randomizer randomizer = new Randomizer();
 
     public NameService()  {
         this.flickNamn = createNameList("flicknamn.txt");
@@ -36,6 +34,17 @@ public class NameService {
         return result;
     }
 
+    public String getRandomFlicknamn(){
+        return flickNamn.get(randomizer.randomNumber(19391));
+    }
+
+    public String getRandomPojknamn(){
+        return pojkNamn.get(randomizer.randomNumber(19499));
+    }
+
+    public String getRandomEfternamn(){
+        return efterNamn.get(randomizer.randomNumber(75));
+    }
 
     public List<String> getFlickNamn() {
         return flickNamn;

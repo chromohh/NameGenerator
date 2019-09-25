@@ -25,4 +25,12 @@ public class AppTest
         System.out.println(test);
         assertNotNull(test);
     }
+
+    @Test
+    public void testGetRandomFlickNamn(){
+        NameService asd = new NameService();
+        String test = asd.getRandomFlicknamn();
+        System.out.println(test);
+        assertNotNull(test);
+    }
 }
