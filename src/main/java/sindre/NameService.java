@@ -68,6 +68,8 @@ public class NameService {
         return temp;
     }
 
+
+
     public List<String> getFlickNamn() {
         return flickNamn;
     }

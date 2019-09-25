@@ -29,7 +29,7 @@ public class AppTest
     }
 
     @Test
-    public void testGetRandomFlickNamn(){
+    public void testGetRandomNamn(){
         NameService asd = new NameService();
         String test = asd.getRandomFlicknamn();
         System.out.println(test);
@@ -41,5 +41,7 @@ public class AppTest
         assertNotNull(test3);
         List<String> test4 = asd.getXAmountOfFlickNamn(5);
         assertEquals(5, test4.size());
+        System.out.println(test4);
+
     }
 }
