@@ -32,5 +32,10 @@ public class AppTest
         String test = asd.getRandomFlicknamn();
         System.out.println(test);
         assertNotNull(test);
+        String test2 = asd.getRandomPojknamn();
+        String test3 = asd.getRandomEfternamn();
+        System.out.println(test2+"\n"+test3);
+        assertNotNull(test2);
+        assertNotNull(test3);
     }
 }
