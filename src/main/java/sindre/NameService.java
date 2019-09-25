@@ -35,15 +35,15 @@ public class NameService {
     }
 
     public String getRandomFlicknamn(){
-        return flickNamn.get(randomizer.randomNumber(19391));
+        return flickNamn.get(randomizer.randomNumber(flickNamn.size()));
     }
 
     public String getRandomPojknamn(){
-        return pojkNamn.get(randomizer.randomNumber(19499));
+        return pojkNamn.get(randomizer.randomNumber(pojkNamn.size()));
     }
 
     public String getRandomEfternamn(){
-        return efterNamn.get(randomizer.randomNumber(75));
+        return efterNamn.get(randomizer.randomNumber(efterNamn.size()));
     }
 
     public List<String> getFlickNamn() {
